@@ -22,7 +22,7 @@ const HeroSection = ({ setActiveSection }: HeroSectionProps) => {
     >
       {/* Overlay for better text readability */}
       <div className="absolute inset-0 bg-gradient-to-br from-blue-900/30 via-purple-800/20 to-teal-700/25"></div>
-      <div className="absolute inset-0 bg-black/40"></div>
+      <div className="absolute inset-0 bg-black/60"></div>
 
       <Container className="relative z-10">
         <div className="text-center max-w-4xl mx-auto">
@@ -32,7 +32,7 @@ const HeroSection = ({ setActiveSection }: HeroSectionProps) => {
             transition={{ duration: 0.8 }}
             className="mb-8"
           >
-            <h1 className="text-5xl lg:text-7xl xl:text-8xl font-bold text-white mb-4 leading-tight drop-shadow-lg">
+            <h1 className="text-5xl lg:text-7xl xl:text-8xl font-bold mb-4 leading-tight drop-shadow-lg bg-gradient-to-r from-[#ff34a1] to-[#00ffc3] bg-clip-text text-transparent">
               SmileCare Network
             </h1>
             <motion.p

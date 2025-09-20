@@ -18,12 +18,17 @@ const AboutSection = () => {
     },
     {
       name: 'Zehaan W.',
-      role: 'Founding Partner and Vice President',
+      role: 'Executive Member',
       bio: ''
     },
     {
-      name: 'Meherab',
-      role: 'Founding Partner and Vice President',
+      name: 'Meherab W.',
+      role: 'Executive Member',
+      bio: ''
+    },
+    {
+      name: 'Arsema B.',
+      role: 'Executive Member',
       bio: ''
     }
   ]
