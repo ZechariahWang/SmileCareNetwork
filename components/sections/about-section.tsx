@@ -88,12 +88,12 @@ const AboutSection = () => {
                   <p className="text-sm text-muted-foreground">A: We work with shelters, community centers, and outreach teams to distribute SmileKits to anyone facing barriers to oral hygiene, no ID or sign-up required.</p>
                 </Card>
                 <Card className="p-4">
-                  <h5 className="font-semibold text-foreground mb-2">Q: What's included in a SmileKit?</h5>
+                  <h5 className="font-semibold text-foreground mb-2">Q: What&apos;s included in a SmileKit?</h5>
                   <p className="text-sm text-muted-foreground">A: Each kit includes a toothbrush, toothpaste, floss and dental picks, a hygiene tips card, and other essentials based on availability.</p>
                 </Card>
                 <Card className="p-4">
                   <h5 className="font-semibold text-foreground mb-2">Q: Can my organization request SmileKits?</h5>
-                  <p className="text-sm text-muted-foreground">A: Absolutely. Please contact us and we'll coordinate a drop-off based on inventory and timing.</p>
+                  <p className="text-sm text-muted-foreground">A: Absolutely. Please contact us and we&apos;ll coordinate a drop-off based on inventory and timing.</p>
                 </Card>
               </div>
             </div>

@@ -25,7 +25,7 @@ const OurWorkSection = () => {
                 SmileKits are care packages designed to restore dignity and promote oral health among underserved populations. Each kit contains essential dental hygiene products that support daily care and long-term wellness.
               </p>
 
-              <h4 className="text-xl font-semibold text-foreground mb-4">📦 What's Inside a SmileKit?</h4>
+              <h4 className="text-xl font-semibold text-foreground mb-4">📦 What&apos;s Inside a SmileKit?</h4>
               <ul className="space-y-2 text-muted-foreground mb-6">
                 <li>🪥 Toothbrush (adult or child size)</li>
                 <li>🦷 Toothpaste (travel or full-size)</li>
@@ -71,7 +71,7 @@ const OurWorkSection = () => {
                 Drop-Offs are the direct outreach arm of SmileCare Network. Once SmileKits are assembled, our volunteers deliver them to local shelters, community centers, transitional housing units, and other partner organizations across Calgary and surrounding areas.
               </p>
 
-              <h4 className="text-xl font-semibold text-foreground mb-4">📍 Where We've Delivered</h4>
+              <h4 className="text-xl font-semibold text-foreground mb-4">📍 Where We&apos;ve Delivered</h4>
               <ul className="space-y-2 text-muted-foreground mb-6">
                 <li>• Street Sisters Society</li>
                 <li>• BeTheChangeYYC</li>

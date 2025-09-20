@@ -36,7 +36,7 @@ const ContactSection = () => {
 
       setSubmitStatus('success')
       setFormData({ name: '', email: '', message: '' })
-    } catch (error) {
+    } catch {
       setSubmitStatus('error')
     } finally {
       setIsSubmitting(false)
@@ -55,7 +55,7 @@ const ContactSection = () => {
           <Card className="p-8">
             <CardHeader>
               <CardTitle>Get In Touch</CardTitle>
-              <CardDescription>Send us a message and we'll get back to you soon</CardDescription>
+              <CardDescription>Send us a message and we&apos;ll get back to you soon</CardDescription>
             </CardHeader>
             <CardContent>
               <form onSubmit={handleSubmit} className="space-y-4">
@@ -97,7 +97,7 @@ const ContactSection = () => {
 
                 {submitStatus === 'success' && (
                   <div className="p-3 rounded-md bg-green-100 text-green-800 text-sm">
-                    Thank you for your message! We'll get back to you soon.
+                    Thank you for your message! We&apos;ll get back to you soon.
                   </div>
                 )}
 
