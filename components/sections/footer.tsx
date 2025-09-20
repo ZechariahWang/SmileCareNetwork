@@ -22,7 +22,7 @@ const Footer = () => {
           </div>
 
           <div className="flex items-center justify-center space-x-6 text-muted-foreground">
-            <span>hello@smilecarenetwork.org</span>
+            <span>info.smilecarenetwork@gmail.com</span>
             <a
               href="https://instagram.com/smilecarenetwork"
               target="_blank"

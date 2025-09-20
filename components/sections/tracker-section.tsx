@@ -11,9 +11,9 @@ const TrackerSection = () => {
 
   const stats = [
     { icon: '🪥', label: 'Dental Hygiene Products Donated', value: 1430, suffix: '+' },
-    { icon: '🎒', label: 'SmileKits Assembled', value: 290, suffix: '+' },
+    { icon: '🎒', label: 'SmileKits Assembled', value: 600, suffix: '+' },
     { icon: '📍', label: 'Drop-Off Locations Reached', value: 17, suffix: '' },
-    { icon: '🙌', label: 'People Reached', value: 2500, suffix: '+' },
+    { icon: '🙌', label: 'People Reached', value: 300, suffix: '+' },
     { icon: '🏢', label: 'Sponsors/Partners', value: 8, suffix: '' },
     { icon: '⏱️', label: 'Volunteer Hours', value: 400, suffix: '+' }
   ]

@@ -128,7 +128,7 @@ const ContactSection = () => {
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-muted-foreground">hello@smilecarenetwork.org</p>
+                <p className="text-muted-foreground">info.smilecarenetwork@gmail.com</p>
               </CardContent>
             </Card>
 

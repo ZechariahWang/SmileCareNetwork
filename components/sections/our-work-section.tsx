@@ -75,6 +75,7 @@ const OurWorkSection = () => {
               <ul className="space-y-2 text-muted-foreground mb-6">
                 <li>• Street Sisters Society</li>
                 <li>• BeTheChangeYYC</li>
+                <li>• Cups Calgary</li>
               </ul>
               <p className="text-muted-foreground">
                 We are continually expanding our network of recipient sites to meet growing needs across the city.

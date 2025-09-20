@@ -14,17 +14,17 @@ const AboutSection = () => {
     {
       name: 'Omar N.',
       role: 'Co-Founder and Co-President',
-      bio: 'TBD'
+      bio: ''
     },
     {
       name: 'Zehaan W.',
       role: 'Founding Partner and Vice President',
-      bio: 'TBD'
+      bio: ''
     },
     {
       name: 'Meherab',
       role: 'Founding Partner and Vice President',
-      bio: 'TBD'
+      bio: ''
     }
   ]
 
