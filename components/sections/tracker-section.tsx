@@ -19,7 +19,7 @@ const TrackerSection = () => {
   ]
 
   return (
-    <section className="py-20 bg-gradient-to-br from-muted/50 to-secondary/30">
+    <section className="py-20 bg-gradient-to-br from-primary/10 via-accent/5 to-secondary/15 relative overflow-hidden">
       <Container>
         <motion.div
           ref={trackerRef}

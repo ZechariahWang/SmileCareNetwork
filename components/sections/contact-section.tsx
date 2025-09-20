@@ -4,6 +4,7 @@ import { useState } from 'react'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { Container } from '@/components/ui/container'
+import { Mail, Smartphone } from 'lucide-react'
 
 const ContactSection = () => {
   const [formData, setFormData] = useState({
@@ -122,7 +123,7 @@ const ContactSection = () => {
             <Card className="p-6">
               <CardHeader>
                 <CardTitle className="flex items-center space-x-2">
-                  <span>📧</span>
+                  <Mail className="w-5 h-5 text-accent" />
                   <span>Email Us</span>
                 </CardTitle>
               </CardHeader>
@@ -134,7 +135,7 @@ const ContactSection = () => {
             <Card className="p-6">
               <CardHeader>
                 <CardTitle className="flex items-center space-x-2">
-                  <span>📱</span>
+                  <Smartphone className="w-5 h-5 text-accent" />
                   <span>Follow Us</span>
                 </CardTitle>
               </CardHeader>
