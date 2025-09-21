@@ -29,15 +29,22 @@ const ContactSection = () => {
     setSubmitStatus('idle')
 
     try {
-      // Simulate form submission - replace with actual API call
-      await new Promise(resolve => setTimeout(resolve, 1000))
+      const response = await fetch('https://formspree.io/f/mwpreeza', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData)
+      })
 
-      // For now, just log the form data and show success
-      console.log('Form submitted:', formData)
-
-      setSubmitStatus('success')
-      setFormData({ name: '', email: '', message: '' })
-    } catch {
+      if (response.ok) {
+        setSubmitStatus('success')
+        setFormData({ name: '', email: '', message: '' })
+      } else {
+        setSubmitStatus('error')
+      }
+    } catch (error) {
+      console.error('Form submission error:', error)
       setSubmitStatus('error')
     } finally {
       setIsSubmitting(false)
