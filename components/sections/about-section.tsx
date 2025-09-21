@@ -2,7 +2,6 @@
 
 import { motion } from 'framer-motion'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
-import { Container } from '@/components/ui/container'
 
 const AboutSection = () => {
   const teamMembers = [

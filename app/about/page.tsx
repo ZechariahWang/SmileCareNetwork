@@ -1,7 +1,4 @@
 import Navigation from '@/components/navigation'
-import { PageWrapper } from '@/components/ui/page-wrapper'
-import { Container } from '@/components/ui/container'
-import MissionSection from '@/components/sections/mission-section'
 import TrackerSection from '@/components/sections/tracker-section'
 import AboutSection from '@/components/sections/about-section'
 import Footer from '@/components/sections/footer'
@@ -60,7 +57,7 @@ export default function AboutPage() {
                     Our Impact
                   </h2>
                   <p className="text-lg text-muted-foreground">
-                    See the difference we're making in our community
+                    See the difference we&apos;re making in our community
                   </p>
                 </div>
                 <TrackerSection />
