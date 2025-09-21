@@ -53,14 +53,14 @@ const ContactSection = () => {
   return (
     <section id="contact" className="py-20 bg-gradient-to-br from-accent/10 to-primary/10">
       <Container>
-        
-        <div className="text-center mb-16">
-          <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-4">Contact Us</h2>
-          <p className="text-xl text-muted-foreground">Get in touch to donate, volunteer, or partner with us</p>
+
+        <div className="text-center mb-16 px-4">
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-foreground mb-4">Contact Us</h2>
+          <p className="text-lg md:text-xl text-muted-foreground">Get in touch to donate, volunteer, or partner with us</p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12">
-          <Card className="p-8">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 px-4">
+          <Card className="p-4 md:p-6 lg:p-8">
             <CardHeader>
               <CardTitle>Get In Touch</CardTitle>
               <CardDescription>Send us a message and we&apos;ll get back to you soon</CardDescription>
@@ -75,7 +75,7 @@ const ContactSection = () => {
                     value={formData.name}
                     onChange={handleInputChange}
                     required
-                    className="w-full px-3 py-2 border border-border rounded-md focus:outline-none focus:ring-2 focus:ring-accent"
+                    className="w-full px-3 py-3 md:py-2 border border-border rounded-md focus:outline-none focus:ring-2 focus:ring-accent text-base"
                     placeholder="Your name"
                   />
                 </div>
@@ -87,7 +87,7 @@ const ContactSection = () => {
                     value={formData.email}
                     onChange={handleInputChange}
                     required
-                    className="w-full px-3 py-2 border border-border rounded-md focus:outline-none focus:ring-2 focus:ring-accent"
+                    className="w-full px-3 py-3 md:py-2 border border-border rounded-md focus:outline-none focus:ring-2 focus:ring-accent text-base"
                     placeholder="your.email@example.com"
                   />
                 </div>
@@ -98,7 +98,7 @@ const ContactSection = () => {
                     value={formData.message}
                     onChange={handleInputChange}
                     required
-                    className="w-full px-3 py-2 border border-border rounded-md focus:outline-none focus:ring-2 focus:ring-accent h-32 resize-none"
+                    className="w-full px-3 py-3 md:py-2 border border-border rounded-md focus:outline-none focus:ring-2 focus:ring-accent h-32 md:h-32 resize-none text-base"
                     placeholder="How can we help you?"
                   />
                 </div>
@@ -126,23 +126,23 @@ const ContactSection = () => {
             </CardContent>
           </Card>
 
-          <div className="space-y-8">
-            <Card className="p-6">
-              <CardHeader>
-                <CardTitle className="flex items-center space-x-2">
-                  <Mail className="w-5 h-5 text-accent" />
+          <div className="space-y-6 md:space-y-8">
+            <Card className="p-4 md:p-6">
+              <CardHeader className="pb-3">
+                <CardTitle className="flex items-center space-x-2 text-base md:text-lg">
+                  <Mail className="w-4 h-4 md:w-5 md:h-5 text-accent" />
                   <span>Email Us</span>
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-muted-foreground">info.smilecarenetwork@gmail.com</p>
+                <p className="text-sm md:text-base text-muted-foreground break-all">info.smilecarenetwork@gmail.com</p>
               </CardContent>
             </Card>
 
-            <Card className="p-6">
-              <CardHeader>
-                <CardTitle className="flex items-center space-x-2">
-                  <Smartphone className="w-5 h-5 text-accent" />
+            <Card className="p-4 md:p-6">
+              <CardHeader className="pb-3">
+                <CardTitle className="flex items-center space-x-2 text-base md:text-lg">
+                  <Smartphone className="w-4 h-4 md:w-5 md:h-5 text-accent" />
                   <span>Follow Us</span>
                 </CardTitle>
               </CardHeader>
@@ -151,9 +151,9 @@ const ContactSection = () => {
                   href="https://instagram.com/smilecarenetwork"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center space-x-2 text-accent hover:text-accent/80 transition-colors"
+                  className="inline-flex items-center space-x-2 text-accent hover:text-accent/80 transition-colors text-sm md:text-base"
                 >
-                  <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-4 h-4 md:w-5 md:h-5" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
                   </svg>
                   <span>@smilecarenetwork</span>
@@ -161,13 +161,13 @@ const ContactSection = () => {
               </CardContent>
             </Card>
 
-            <Card className="p-6">
-              <CardHeader>
-                <CardTitle>Sponsor a SmileKit</CardTitle>
-                <CardDescription>$2 covers one full SmileKit</CardDescription>
+            <Card className="p-4 md:p-6">
+              <CardHeader className="pb-3">
+                <CardTitle className="text-base md:text-lg">Sponsor a SmileKit</CardTitle>
+                <CardDescription className="text-sm md:text-base">$2 covers one full SmileKit</CardDescription>
               </CardHeader>
               <CardContent>
-                <Button className="w-full bg-accent hover:bg-accent/90 text-accent-foreground">
+                <Button className="w-full bg-accent hover:bg-accent/90 text-accent-foreground py-3 text-base">
                   Donate Now
                 </Button>
               </CardContent>
