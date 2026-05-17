@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(Get-ChildItem *)",
+      "PowerShell(Get-ChildItem -Path \"C:\\\\Users\\\\zecha\\\\OneDrive\\\\Documents\\\\SmileCareNetwork\" -Recurse -File | Where-Object {$_.Extension -in '.tsx', '.ts', '.jsx', '.js', '.css', '.scss'} | Select-Object -First 50 FullName)",
+      "Bash(npm run *)",
+      "Bash(node -e \"const p=require\\('./package.json'\\);console.log\\('ogl:',\\(p.dependencies&&p.dependencies.ogl\\)||\\(p.devDependencies&&p.devDependencies.ogl\\)||'NOT FOUND'\\);console.log\\('scripts:',JSON.stringify\\(p.scripts\\)\\)\")",
+      "Bash(npx eslint *)"
+    ]
+  }
+}

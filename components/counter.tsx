@@ -10,7 +10,7 @@ interface CounterProps {
   suffix?: string
 }
 
-const Counter = ({ end, duration = 2, suffix = '' }: CounterProps) => {
+const Counter = ({ end, duration = 1.2, suffix = '' }: CounterProps) => {
   const [count, setCount] = useState(0)
   const ref = useRef(null)
   const isInView = useInView(ref, { once: true })
@@ -43,7 +43,7 @@ const Counter = ({ end, duration = 2, suffix = '' }: CounterProps) => {
       className="text-4xl lg:text-5xl font-bold text-accent font-inter"
       initial={{ opacity: 0 }}
       animate={isInView ? { opacity: 1 } : { opacity: 0 }}
-      transition={{ duration: 0.5 }}
+      transition={{ duration: 0.3 }}
     >
       {count.toLocaleString()}{suffix}
     </motion.span>
