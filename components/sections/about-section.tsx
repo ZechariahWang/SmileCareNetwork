@@ -1,6 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
+import { HeartHandshake, HandCoins } from 'lucide-react'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 
 const AboutSection = () => {
@@ -8,32 +9,27 @@ const AboutSection = () => {
     {
       name: 'Moses M.',
       role: 'Founder & Co-President',
-      bio: 'BHSc student at the University of Calgary passionate about dentistry and equitable care. Leads vision, partnerships, and strategy.',
-      initials: 'MM'
+      bio: 'BHSc student at the University of Calgary passionate about dentistry and equitable care. Leads vision, partnerships, and strategy.'
     },
     {
       name: 'Omar N.',
       role: 'Co-Founder & Co-President',
-      bio: 'Dedicated to expanding our reach and building meaningful community partnerships.',
-      initials: 'ON'
+      bio: 'Dedicated to expanding our reach and building meaningful community partnerships.'
     },
     {
       name: 'Zehaan W.',
       role: 'Executive Member',
-      bio: 'Focuses on operations and ensuring our SmileKits reach those who need them most.',
-      initials: 'ZW'
+      bio: 'Focuses on operations and ensuring our SmileKits reach those who need them most.'
     },
     {
       name: 'Meherab W.',
       role: 'Executive Member',
-      bio: 'Manages outreach initiatives and community engagement efforts.',
-      initials: 'MW'
+      bio: 'Manages outreach initiatives and community engagement efforts.'
     },
     {
       name: 'Arsema B.',
       role: 'Executive Member',
-      bio: 'Coordinates volunteer activities and educational program development.',
-      initials: 'AB'
+      bio: 'Coordinates volunteer activities and educational program development.'
     }
   ]
 
@@ -45,16 +41,13 @@ const AboutSection = () => {
           {teamMembers.map((member, index) => (
             <motion.div
               key={member.name}
-              initial={{ opacity: 0, y: 30 }}
+              initial={{ opacity: 0, y: 16 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: index * 0.1 }}
+              transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1], delay: index * 0.05 }}
               viewport={{ once: true }}
               className="group"
             >
               <Card className="text-center p-6 h-full hover:shadow-xl transition-all duration-300 group-hover:scale-105 bg-card/50 backdrop-blur-sm border-2 border-transparent hover:border-accent/20">
-                <div className="w-20 h-20 lg:w-24 lg:h-24 rounded-full bg-gradient-to-br from-accent to-primary mx-auto mb-6 flex items-center justify-center shadow-lg group-hover:shadow-accent/25 transition-all duration-300">
-                  <span className="text-background font-bold text-xl lg:text-2xl">{member.initials}</span>
-                </div>
                 <CardHeader className="pb-2 px-0">
                   <CardTitle className="text-lg lg:text-xl text-foreground">{member.name}</CardTitle>
                   <CardDescription className="text-accent font-semibold text-sm">{member.role}</CardDescription>
@@ -77,8 +70,8 @@ const AboutSection = () => {
         <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
           <div>
             <div className="flex items-center mb-6">
-              <div className="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center mr-4">
-                <span className="text-2xl">🪥</span>
+              <div className="w-12 h-12 rounded-full bg-accent/10 text-accent flex items-center justify-center mr-4">
+                <HeartHandshake className="w-6 h-6" />
               </div>
               <h4 className="text-xl font-semibold text-accent">For Recipients & Community Organizations</h4>
             </div>
@@ -100,8 +93,8 @@ const AboutSection = () => {
 
           <div>
             <div className="flex items-center mb-6">
-              <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mr-4">
-                <span className="text-2xl">💰</span>
+              <div className="w-12 h-12 rounded-full bg-primary/10 text-primary flex items-center justify-center mr-4">
+                <HandCoins className="w-6 h-6" />
               </div>
               <h4 className="text-xl font-semibold text-primary">For Donors & Sponsors</h4>
             </div>

@@ -1,42 +1,72 @@
 'use client'
 
 import Image from 'next/image'
+import Link from 'next/link'
 import { Container } from '@/components/ui/container'
+import { Mail, Instagram } from 'lucide-react'
+
+const navigationItems = [
+  { label: 'Home', href: '/' },
+  { label: 'About', href: '/about' },
+  { label: 'Our Work', href: '/our-work' },
+  { label: 'Resources', href: '/resources' },
+  { label: 'Contact', href: '/contact' }
+]
 
 const Footer = () => {
   return (
-    <footer className="border-t border-border py-12 bg-muted/30">
+    <footer className="bg-muted/20 py-6">
       <Container>
-        <div className="text-center space-y-4">
-          <div className="flex items-center justify-center space-x-3">
-            <div className="h-8 w-8 rounded-full bg-gradient-to-br from-accent to-primary flex items-center justify-center p-0.5">
-              <Image
-                src="/SmileCare_Network_Logo.png"
-                alt="SmileCare Network Logo"
-                width={28}
-                height={28}
-                className="h-7 w-7 object-contain rounded-full"
-              />
-            </div>
-            <span className="font-bold text-lg">SmileCare Network</span>
+        <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
+          {/* Brand */}
+          <div className="flex items-center space-x-2">
+            <Image
+              src="/SmileCare_Network_Logo.png"
+              alt="SmileCare Network Logo"
+              width={28}
+              height={28}
+              className="h-7 w-7 object-contain"
+            />
+            <span className="font-bold text-foreground">SmileCare Network</span>
           </div>
 
-          <div className="flex items-center justify-center space-x-6 text-muted-foreground">
-            <span>info.smilecarenetwork@gmail.com</span>
+          {/* Nav */}
+          <nav className="flex flex-wrap gap-x-5 gap-y-2 text-sm">
+            {navigationItems.map((item) => (
+              <Link
+                key={item.href}
+                href={item.href}
+                className="text-muted-foreground hover:text-accent transition-colors"
+              >
+                {item.label}
+              </Link>
+            ))}
+          </nav>
+
+          {/* Social */}
+          <div className="flex items-center gap-4 text-muted-foreground">
+            <a
+              href="mailto:info.smilecarenetwork@gmail.com"
+              aria-label="Email SmileCare Network"
+              className="hover:text-accent transition-colors"
+            >
+              <Mail className="w-5 h-5" />
+            </a>
             <a
               href="https://instagram.com/smilecarenetwork"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="SmileCare Network on Instagram"
               className="hover:text-accent transition-colors"
             >
-              Instagram
+              <Instagram className="w-5 h-5" />
             </a>
           </div>
-
-          <div className="text-muted-foreground text-sm">
-            <p>Founded 2025 • Copyright © SmileCare Network</p>
-          </div>
         </div>
+
+        <p className="mt-4 text-center text-xs text-muted-foreground md:text-left">
+          Founded 2025 · © SmileCare Network
+        </p>
       </Container>
     </footer>
   )

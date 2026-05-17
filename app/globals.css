@@ -1,21 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
 @import "tailwindcss";
 
-
-
+/* SmileCare Network — dark brand theme (self-contained, no shadcn preset) */
 :root {
-  --background: #0f172a;
+  --background: #05070d;
   --foreground: #f8fafc;
   --primary: #3b82f6;
   --primary-foreground: #ffffff;
   --secondary: #f59e0b;
-  --secondary-foreground: #0f172a;
-  --muted: #475569;
+  --secondary-foreground: #05070d;
+  --muted: #1e293b;
   --muted-foreground: #cbd5e1;
   --accent: #10b981;
   --accent-foreground: #ffffff;
-  --border: #334155;
+  --border: #1e293b;
   --ring: #3b82f6;
+  --card: #0b1120;
+  --card-foreground: #f8fafc;
   --smilecare-blue: #3b82f6;
   --smilecare-blue-light: #dbeafe;
 }
@@ -33,39 +33,42 @@
   --color-accent-foreground: var(--accent-foreground);
   --color-border: var(--border);
   --color-ring: var(--ring);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
   --color-smilecare-blue: var(--smilecare-blue);
   --color-smilecare-blue-light: var(--smilecare-blue-light);
-  --font-sans: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    --background: #0f172a;
-    --foreground: #f8fafc;
-    --primary: #3b82f6;
-    --primary-foreground: #ffffff;
-    --secondary: #f59e0b;
-    --secondary-foreground: #0f172a;
-    --muted: #475569;
-    --muted-foreground: #cbd5e1;
-    --accent: #10b981;
-    --accent-foreground: #ffffff;
-    --border: #334155;
-    --ring: #3b82f6;
-  }
-}
-
-.font-inter {
-  font-family: 'Inter', sans-serif;
-}
-
-.font-space-grotesk {
-  font-family: 'Space Grotesk', sans-serif;
+  --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-geist-mono), ui-monospace, monospace;
 }
 
 html {
   scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5 {
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+/* Keep existing class names working; both now resolve to Geist */
+.font-inter,
+.font-space-grotesk {
+  font-family: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
+}
+
+/* Reusable frosted rounded frame for text content */
+.glass-panel {
+  background: rgba(11, 17, 32, 0.55);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--border);
 }
 
 .animate-fade-in {
@@ -109,10 +112,4 @@ html {
   to {
     opacity: 1;
   }
-}
-
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
 }
